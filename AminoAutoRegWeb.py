@@ -30,14 +30,14 @@ def generate_device_id():
 
 
 def auto_register():
-    client = aminofix.Client(deviceId=generate_device_id())
-    sec_mail = secmail.SecMail()
-    password = input(
-        "Password for all accounts",
-        required=True,
-        placeholder="Password",
-        type=PASSWORD)
     while True:
+        client = aminofix.Client(deviceId=generate_device_id())
+        sec_mail = secmail.SecMail()
+        password = input(
+            "Password for all accounts",
+            required=True,
+            placeholder="Password",
+            type=PASSWORD)
         try:
             nickname = get_last_name()
             email = sec_mail.generate_email()
