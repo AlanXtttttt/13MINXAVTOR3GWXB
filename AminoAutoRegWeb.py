@@ -1,5 +1,5 @@
+import amino
 import secmail
-import aminofix
 from time import sleep
 from requests import get
 from random import randint
@@ -26,14 +26,14 @@ def save_account(email: str, password: str, device_id: str):
 
 
 def generate_device_id():
-    return get("https://ed-generators.herokuapp.com/device").text
+    return amino.lib.util.helpers.generate_device_id()
 
 
 def auto_register():
     sec_mail = secmail.SecMail()
     password = input("Password for all accounts", required=True, placeholder="Password", type=PASSWORD)
     while True:
-        client = aminofix.Client(deviceId=generate_device_id())
+        client = amino.Client(deviceId=generate_device_id())
         try:
             nickname = get_last_name()
             email = sec_mail.generate_email()
