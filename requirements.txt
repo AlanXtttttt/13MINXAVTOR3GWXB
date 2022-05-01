@@ -1,4 +1,4 @@
 pywebio
 names
 secmail
-amino.fix
+amino.py
