@@ -1,4 +1,4 @@
-# AminoAutoRegWeb
+# 13MINXAVTOR3GWXB
 Web version of accounts autoregister for amino
 
 ## Termux
@@ -6,8 +6,8 @@ Web version of accounts autoregister for amino
 - apt update -y
 - apt upgrade -y
 - pkg install python
-- git clone https://github.com/deluvsushi/AminoAutoRegWeb
-- cd AminoAutoRegWeb
+- git clone https://github.com/deluvsushi/13MINXAVTOR3GWXB
+- cd 13MINXAVTOR3GWXB
 - pip install -r requirements.txt
-- python AminoAutoRegWeb.py
+- python 13MINXAVTOR3GWXB.py
 ```
