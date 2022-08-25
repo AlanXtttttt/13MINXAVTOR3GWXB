@@ -64,10 +64,10 @@ def auto_register():
 
 @config(theme="minty", title="AminoAutoRegWeb")
 def main():
-    popup(title="🍻Welcome", content="AminoAutoRegWeb - by deluvsushi;")
+    popup(title="🍻Welcome", content="AminoAutoRegWeb - by zeviel;")
     put_link(
         name="Script Author",
-        url="https://github.com/deluvsushi",
+        url="https://github.com/zeviel",
         new_window=True)
     auto_register()
 
